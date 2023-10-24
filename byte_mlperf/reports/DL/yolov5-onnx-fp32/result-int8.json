@@ -1,0 +1,24 @@
+{
+    "Model": "YOLOV5-ONNX-FP32",
+    "Backend": "DL",
+    "Host Info": "AMD Ryzen 7 7700X 8-Core Processor",
+    "Dataset": "FAKE_DATASET",
+    "Instance Count": 1,
+    "Device Count": 1,
+    "Graph Compile": {
+        "Compile Duration": 49.216,
+        "Compile Precision": "INT8",
+        "Subgraph Coverage": 100,
+        "Optimizations": {
+            "networkConfig": "--fast-sigmoid-fp32=1 --continous-tiling=1"
+        }
+    },
+    "Performance": [
+        {
+            "BS": 8,
+            "QPS": 1292,
+            "AVG Latency": 6.19,
+            "P99 Latency": 6.42
+        }
+    ]
+}

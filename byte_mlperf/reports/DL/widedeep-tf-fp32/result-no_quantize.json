@@ -1,0 +1,32 @@
+{
+    "Model": "WIDEDEEP-TF-FP32",
+    "Backend": "DL",
+    "Host Info": "AMD Ryzen 7 7700X 8-Core Processor",
+    "Dataset": "OPEN_CRITEO_KAGGLE",
+    "Instance Count": 1,
+    "Device Count": 1,
+    "Graph Compile": {
+        "Compile Duration": 7.29966,
+        "Compile Precision": "NO_QUANTIZE",
+        "Subgraph Coverage": 100,
+        "Optimizations": {}
+    },
+    "Accuracy": {
+        "Data Percent": 100,
+        "Top-1": 0.77395,
+        "Mean Diff": 0.0,
+        "Std Diff": 0.0,
+        "Max Diff": 0.0,
+        "Max Rel-Diff": 3e-05,
+        "Mean Rel-Diff": 0.0,
+        "Diff Dist": "widedeep-tf-fp32-to-no_quantize.png"
+    },
+    "Performance": [
+        {
+            "BS": 16384,
+            "QPS": 86605,
+            "AVG Latency": 189.18,
+            "P99 Latency": 189.34
+        }
+    ]
+}

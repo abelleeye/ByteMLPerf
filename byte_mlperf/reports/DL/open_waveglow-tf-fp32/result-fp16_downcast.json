@@ -1,0 +1,22 @@
+{
+    "Model": "OPEN_WAVEGLOW-TF-FP32",
+    "Backend": "DL",
+    "Host Info": "AMD Ryzen 7 7700X 8-Core Processor",
+    "Dataset": "FAKE_DATASET",
+    "Instance Count": 1,
+    "Device Count": 128,
+    "Graph Compile": {
+        "Compile Duration": 179.24703,
+        "Compile Precision": "FP16",
+        "Subgraph Coverage": 100,
+        "Optimizations": {}
+    },
+    "Performance": [
+        {
+            "BS": 32,
+            "QPS": 14,
+            "AVG Latency": 2213.24,
+            "P99 Latency": 2216.35
+        }
+    ]
+}

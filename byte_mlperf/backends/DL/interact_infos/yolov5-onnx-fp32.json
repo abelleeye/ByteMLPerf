@@ -1,0 +1,4 @@
+{
+    "precision": "int8",
+    "networkConfig": "--fast-sigmoid-fp32=1 --continous-tiling=1"
+}

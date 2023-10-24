@@ -1,0 +1,4 @@
+{
+    "precision": "fp16_downcast",
+    "networkConfig": "--fast-sigmoid-fp32=1 --continous-tiling=1 --fast-tanh-fp32=1"
+}

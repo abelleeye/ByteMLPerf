@@ -1,0 +1,5 @@
+{
+    "precision": "fp16_downcast",
+    "networkConfig": "--dl.fast_softmax=1",
+    "tvmQuantizeArgs": "--enable_swin_mha_tiling"
+}

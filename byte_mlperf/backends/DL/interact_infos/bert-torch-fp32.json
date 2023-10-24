@@ -1,0 +1,7 @@
+{
+    "precision": "fp16_downcast",
+    "osEnv": {
+        "HC_TU_RAISE_NORAMLIZE_INTERNAL_DTYPE": "1" 
+    },
+    "networkConfig": "--dl.fast_softmax=1 --dl.fast_layer_norm=1"
+}

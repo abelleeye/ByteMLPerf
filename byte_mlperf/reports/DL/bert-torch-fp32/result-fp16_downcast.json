@@ -1,0 +1,38 @@
+{
+    "Model": "BERT-TORCH-FP32",
+    "Backend": "DL",
+    "Host Info": "AMD Ryzen 7 7700X 8-Core Processor",
+    "Dataset": "OPEN_SQUAD",
+    "Instance Count": 1,
+    "Device Count": 1,
+    "Graph Compile": {
+        "Compile Duration": 69.78649,
+        "Compile Precision": "FP16_DOWNCAST",
+        "Subgraph Coverage": 100,
+        "Optimizations": {
+            "osEnv": {
+                "HC_TU_RAISE_NORAMLIZE_INTERNAL_DTYPE": "1"
+            },
+            "networkConfig": "--dl.fast_softmax=1 --dl.fast_layer_norm=1"
+        }
+    },
+    "Accuracy": {
+        "Data Percent": 100,
+        "Exact Match": 78.71319,
+        "F1 Score": 85.81071,
+        "Mean Diff": 0.00477,
+        "Std Diff": 0.00949,
+        "Max Diff": 1.82508,
+        "Max Rel-Diff": 1086.17724,
+        "Mean Rel-Diff": 0.00284,
+        "Diff Dist": "bert-torch-fp32-to-fp16_downcast.png"
+    },
+    "Performance": [
+        {
+            "BS": 64,
+            "QPS": 894,
+            "AVG Latency": 71.51,
+            "P99 Latency": 71.69
+        }
+    ]
+}

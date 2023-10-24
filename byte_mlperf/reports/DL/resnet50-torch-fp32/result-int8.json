@@ -1,0 +1,32 @@
+{
+    "Model": "RESNET50-TORCH-FP32",
+    "Backend": "DL",
+    "Host Info": "AMD Ryzen 7 7700X 8-Core Processor",
+    "Dataset": "OPEN_IMAGENET",
+    "Instance Count": 1,
+    "Device Count": 1,
+    "Graph Compile": {
+        "Compile Duration": 682.61583,
+        "Compile Precision": "INT8",
+        "Subgraph Coverage": 100,
+        "Optimizations": {}
+    },
+    "Accuracy": {
+        "Data Percent": 100,
+        "Top-1": 0.7682,
+        "Mean Diff": 0.11483,
+        "Std Diff": 0.1027,
+        "Max Diff": 4.50581,
+        "Max Rel-Diff": 365372.71875,
+        "Mean Rel-Diff": 0.63472,
+        "Diff Dist": "resnet50-torch-fp32-to-int8.png"
+    },
+    "Performance": [
+        {
+            "BS": 64,
+            "QPS": 23021,
+            "AVG Latency": 2.78,
+            "P99 Latency": 2.81
+        }
+    ]
+}
